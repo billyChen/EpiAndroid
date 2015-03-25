@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    >
+        <LinearLayout
+            android:id="@+id/connexionLayout"
+            android:layout_width="350dp"
+            android:layout_height="450dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login_label"
+                android:textSize="35sp"
+                android:gravity="center"
+                />
+
+            <EditText
+                android:id="@+id/editLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/login"
+                android:inputType="text"
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/password_label"
+                android:textSize="35sp"
+                android:layout_marginTop="50sp"
+                android:gravity="center"
+                />
+
+            <EditText
+                android:id="@+id/editPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                />
+
+            <Button
+                android:id="@+id/connexion"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="75sp"
+                android:background="#000066"
+                android:textColor="#FFFFFF"
+                android:text="Connexion"
+                />
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linlaHeaderProgress"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_below="@id/connexionLayout"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/pbHeaderProgress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+        </ProgressBar>
+    </LinearLayout>
+        <TextView
+            android:layout_below="@id/linlaHeaderProgress"
+            android:id="@+id/errorConnexion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:textSize="30sp"
+            android:textColor="#000066"/>
+
+    </RelativeLayout>

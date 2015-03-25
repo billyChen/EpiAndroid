@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3F3F3F"
+            android:padding="25dp"
+         >
+            <ImageView
+                android:id="@+id/profilPicture"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+            />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/userFullname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Logtime"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"/>
+                <TextView
+                    android:id="@+id/userSemester"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Logtime"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp"/>
+                <TextView
+                    android:id="@+id/logtime_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Logtime"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp"/>
+
+                <TextView
+                    android:id="@+id/logtime"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linlaHeaderProgress"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <ProgressBar
+                android:id="@+id/pbHeaderProgress"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+            </ProgressBar>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Latest messages"
+            android:textSize="35sp"
+            android:layout_marginTop="25dp"
+            android:textColor="#000066"/>
+
+        <ListView
+            android:id="@+id/history_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="2"></ListView>
+
+
+    </LinearLayout>
+</LinearLayout>
